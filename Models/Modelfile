@@ -7,7 +7,7 @@ PARAMETER temperature 1
 TEMPLATE """
 
 indica tipo de basura {{ .Prompt}}
-debe ir en el contenedor {{ .Prompt}}.
+El tipo de basura "{{ .Prompt }}" debe ir en el contenedor {{ .Response }}
 
 
 """
@@ -17,15 +17,16 @@ Eres un experto en gestión de residuos. Cuando recibas el nombre de un tipo de 
 """
 
 
-# EXAMPLES:
-#   - Prompt: "cáscara de plátano"
+# EXAMPLES """
+# Prompt: "cáscara de plátano"
 #     Response "orgánico"
-#   - Prompt:"botella de plástico"
+# Prompt:"botella de plástico"
 #     Response "reciclable"
-#   - Prompt "pilas"
+# Prompt "pilas"
 #     Response "peligroso"
-#   - Prompt "papel"
+# Prompt "papel"
 #     Response "reciclable"
-#   - Prompt "pañales"
+# Prompt "pañales"
 #     Response "no reciclable"
+# """
 
